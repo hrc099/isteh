@@ -1,0 +1,22 @@
+{
+  "name": "isteh",
+  "version": "1.0.0",
+  "description": "Inox Staklo Teh web",
+  "main": "js/app.js",
+  "dependencies": {
+  	"pug": "^2.0.0-rc.2",
+  	"pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "htmlrender": "pug templates --out html",
+    "preprocess": "sass --update sass:stylesheets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hhusnjak@bitbucket.org/hhusnjak/isteh.git"
+  },
+  "author": "Hrvoje Husnjak",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/hhusnjak/isteh#readme"
+}
