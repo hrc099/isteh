@@ -2,6 +2,7 @@
 
 header, footer
 	background: $primary-color
+	color: $secondary-color
 	width: 100%
 header
 	background: $primary-color
@@ -22,12 +23,24 @@ nav
 			padding: $primary-gutter
 		li:first-child
 			margin-right: auto
-			font-size: 24px
+			padding-left: 0
 		li:last-child
 			margin-left: auto
+			padding-right: 0
 			visibility: hidden
 	a
-		text-decoration: none
 		color: $secondary-color
 	a:hover
 		color: #FFF
+footer
+	.col * > *
+		padding: 0px $primary-gutter $primary-gutter 0px
+	a
+		display: inline-block
+	.col:first-child a:first-child
+		padding: $primary-gutter $primary-gutter $primary-gutter 0px
+	i
+		width: 16px
+	.map
+		padding: 0
+		width: 40%

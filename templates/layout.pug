@@ -3,7 +3,7 @@ html
   head
     link(rel="stylesheet", href="../stylesheets/normalize.css")
     link(rel="stylesheet", href="../stylesheets/master.css")
-    title Isteh
+    title ISTeh
   body
     header
       .wrap
@@ -11,7 +11,7 @@ html
           nav#nav
             ul
               li
-                a(href='index.html')
+                a(href='index.html').isteh
                   b Inox Staklo Teh
               li
                 a(href='index.html')
@@ -26,7 +26,7 @@ html
                 a(href='kontakt.html') 
                   b KONTAKT
               li
-                a(href='index.html')
+                a(href='index.html').isteh
                   b Inox Staklo Teh
     script(src="../js/app.js")
     block content
@@ -35,7 +35,25 @@ html
         .grid
           nav
             .col.col--3-of-9
-              a(href='index.html')
+              a(href='index.html').isteh
                     b Inox Staklo Teh
+              br
+              span
+                i.fa.fa-envelope-o(aria-hidden='true')
+                span  isteh@gmail.com
+              br
+              span
+                i.fa.fa-phone(aria-hidden='true')
+                span  +38599000111
+              br
+              span
+                i.fa.fa-facebook-official(aria-hidden='true')
+                span  ISTeh Facebook stranica
+              br
+              a(href='https://goo.gl/maps/GGqhQUEkeRT2')
+                i.fa.fa-map-marker(aria-hidden='true')
+                span  2. Novački odvojak 8, 10000 Zagreb
             .col.col--3-of-9
+              a.map(href='https://goo.gl/maps/GGqhQUEkeRT2')
+                img(src='../img/isteh_map.png')
             .col.col--3-of-9

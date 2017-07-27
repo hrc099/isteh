@@ -9,6 +9,7 @@ body {
   color: #282828;
   background: #EDEDED;
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   line-height: 1.5; }
 
 a {
@@ -30,5 +31,8 @@ a {
 
 img {
   max-width: 100%; }
+
+.isteh {
+  font-size: 24px; }
 
 /*# sourceMappingURL=index.css.map */
