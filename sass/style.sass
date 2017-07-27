@@ -1,10 +1,16 @@
+/* Imports - font and other .sass files */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext')
+
+/* Variables */
 
 $primary-color: #102B3F
 $secondary-color: #EDEDED
 $primary-text: #282828
 $primary-gutter: 20px
 $nav-height: 76px
+
+/* Styles */
 
 *
 	box-sizing: border-box
@@ -13,43 +19,17 @@ body
 	background: $secondary-color
 	font-family: 'Open Sans', sans-serif
 	line-height: 1.5
-header
-	background: $primary-color
-	position: fixed
-	top: 0
-	width: 100%
-nav
-	ul
-		list-style-type: none
-		display: inline-block
-		margin: 0
-		padding: 0
-		display: flex
-		justify-content: center
-		align-items: baseline
-
-		li
-			padding: $primary-gutter
-		li:first-child
-			margin-right: auto
-			font-size: 24px
-		li:last-child
-			margin-left: auto
-			visibility: hidden
-	a
-		text-decoration: none
-		color: $secondary-color
-	a:hover
-		color: #FFF
+a
+	text-decoration: none
 .wrap
 	max-width: 960px
 	margin: 0 auto
-.index-main
+.main
 	margin-top: $nav-height + $primary-gutter * 2
 .panel
 	margin: 0px 20px 40px 20px
 	background: #FFF
-.index-main .col *
+.main .col *
 	padding: $primary-gutter
 img
 	max-width: 100%
