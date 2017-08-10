@@ -26,34 +26,56 @@ html
                 a(href='kontakt.html') 
                   b KONTAKT
               li
-                a(href='index.html').isteh
-                  b Inox Staklo Teh
+                a(href='https://www.facebook.com/InoxStakloTeh' target='_blank').isteh
+                  b
+                    i.fa.fa-facebook-official(aria-hidden='true')
     script(src="../js/app.js")
     block content
     footer
       .wrap
         .grid
           nav
-            .col.col--3-of-9
-              a(href='index.html').isteh
-                    b Inox Staklo Teh
+            .col
+              span
+                a(href='index.html').isteh
+                      b Inox Staklo Teh
               br
               span
-                i.fa.fa-envelope-o(aria-hidden='true')
-                span  isteh@gmail.com
+                a(href='mailto:emil.bosak@zg.t-com.hr')
+                  i.fa.fa-envelope(aria-hidden='true')
+                  span emil.bosak@zg.t-com.hr
               br
               span
-                i.fa.fa-phone(aria-hidden='true')
-                span  +38599000111
+                a(href='tel:+38598414550')
+                  i.fa.fa-phone(aria-hidden='true')
+                  span +38598414550
               br
               span
-                i.fa.fa-facebook-official(aria-hidden='true')
-                span  ISTeh Facebook stranica
+                a(href='tel:+38513370948')
+                  i.fa.fa-fax(aria-hidden='true')
+                  span +38513370948
               br
-              a(href='https://goo.gl/maps/GGqhQUEkeRT2')
-                i.fa.fa-map-marker(aria-hidden='true')
-                span  2. Novački odvojak 8, 10000 Zagreb
-            .col.col--3-of-9
-              a.map(href='https://goo.gl/maps/GGqhQUEkeRT2')
-                img(src='../img/isteh_map.png')
-            .col.col--3-of-9
+              span
+                a(href='https://www.facebook.com/InoxStakloTeh' target='_blank')
+                  i.fa.fa-facebook-official(aria-hidden='true')
+                  span ISTeh Facebook stranica
+              br
+              span
+                a(href='https://goo.gl/maps/GGqhQUEkeRT2' target='_blank')
+                  i.fa.fa-map-marker(aria-hidden='true')
+                  span Novački odv. II 8, Rakitje
+            .col
+              span.hidden
+                a(href='index.html').isteh
+                      b Inox Staklo Teh
+              br
+              a.map-link(href='https://goo.gl/maps/GGqhQUEkeRT2' target='_blank')
+                img.map(src='../img/isteh_map.png')
+            .col
+              span.hidden
+                a(href='index.html').isteh
+                      b Inox Staklo Teh
+              br
+              span OIB: 34982622129
+              br
+              span IBAN: HR3223600001102448735

@@ -25,14 +25,19 @@ a {
 .panel {
   margin: 0px 20px 40px 20px;
   background: #FFF; }
+  .panel a, .panel a * {
+    color: #102B3F;
+    padding: 0 !important; }
+  .panel img {
+    max-width: 100%; }
 
 .main .col * {
   padding: 20px; }
 
-img {
-  max-width: 100%; }
-
 .isteh {
   font-size: 24px; }
+
+.hidden {
+  visibility: hidden; }
 
 /*# sourceMappingURL=index.css.map */

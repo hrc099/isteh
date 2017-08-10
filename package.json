@@ -4,8 +4,7 @@
   "description": "Inox Staklo Teh web",
   "main": "js/app.js",
   "dependencies": {
-  	"pug": "^2.0.0-rc.2",
-  	"pug-cli": "^1.0.0-alpha6"
+  	"pug": "^2.0.0-rc.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

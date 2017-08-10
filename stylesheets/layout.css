@@ -25,15 +25,20 @@ a {
 .panel {
   margin: 0px 20px 40px 20px;
   background: #FFF; }
+  .panel a, .panel a * {
+    color: #102B3F;
+    padding: 0 !important; }
+  .panel img {
+    max-width: 100%; }
 
 .main .col * {
   padding: 20px; }
 
-img {
-  max-width: 100%; }
-
 .isteh {
   font-size: 24px; }
+
+.hidden {
+  visibility: hidden; }
 
 header, footer {
   background: #102B3F;
@@ -60,24 +65,36 @@ nav ul {
     margin-right: auto;
     padding-left: 0; }
   nav ul li:last-child {
+    width: 184px;
     margin-left: auto;
     padding-right: 0;
-    visibility: hidden; }
+    text-align: center; }
 nav a {
   color: #EDEDED; }
 nav a:hover {
   color: #FFF; }
 
-footer .col * > * {
-  padding: 0px 20px 20px 0px; }
-footer a {
-  display: inline-block; }
-footer .col:first-child a:first-child {
-  padding: 20px 20px 20px 0px; }
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px; }
+footer .col > * {
+  display: inline-block;
+  margin: 0px 0px 20px 0px; }
+footer .col:last-child {
+  padding: 0px 20px 0px 0px; }
 footer i {
+  margin-right: 20px;
   width: 16px; }
-footer .map {
-  padding: 0;
-  width: 40%; }
+footer .map-link {
+  width: 290px;
+  margin: 0 !important; }
+  footer .map-link .map {
+    max-width: 100%;
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5); }
+  footer .map-link .map:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
 
 /*# sourceMappingURL=layout.css.map */

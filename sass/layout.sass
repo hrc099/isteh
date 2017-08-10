@@ -25,22 +25,35 @@ nav
 			margin-right: auto
 			padding-left: 0
 		li:last-child
+			width: 184px
 			margin-left: auto
 			padding-right: 0
-			visibility: hidden
+			text-align: center
 	a
 		color: $secondary-color
 	a:hover
 		color: #FFF
 footer
-	.col * > *
-		padding: 0px $primary-gutter $primary-gutter 0px
-	a
+	nav
+		display: flex
+		justify-content: space-between
+		padding: $primary-gutter 0px
+	.col > *
 		display: inline-block
-	.col:first-child a:first-child
-		padding: $primary-gutter $primary-gutter $primary-gutter 0px
+		margin: 0px 0px $primary-gutter 0px
+	.col:last-child
+		padding: 0px $primary-gutter 0px 0px
 	i
+		margin-right: $primary-gutter
 		width: 16px
-	.map
-		padding: 0
-		width: 40%
+	.map-link
+		width: 290px
+		margin: 0 !important
+
+		.map
+			max-width: 100%
+			-webkit-filter: grayscale(0.5)
+			filter: grayscale(0.5)
+		.map:hover
+			-webkit-filter: grayscale(0)
+			filter: grayscale(0)
