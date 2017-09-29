@@ -9,40 +9,105 @@ header
 	position: fixed
 	top: 0
 	width: 100%
+	z-index: 10
+
+	input
+		display: block
+		width: 33px
+		height: 24px
+		position: absolute
+		top: 20px
+		left: 20px
+		cursor: pointer
+		opacity: 0
+		z-index: 7
+		-webkit-touch-callout: none
+	ul
+		width: 100%
+		background: $primary-color
+
+		li
+			display: inline-block
+			padding: 0
+			@media screen and (max-width: $toast-breakpoint-medium)
+				display: block
+
+			a
+				margin: $primary-gutter 0
+				padding: 0 $primary-gutter
+				display: block
+				@media screen and (max-width: $toast-breakpoint-medium)
+					text-align: center
+	.icons
+		a
+			font-size: 24px
+	@media screen and (max-width: $toast-breakpoint-medium)
+		// Reponsive header nav
+		.isteh
+			padding-left: $primary-gutter !important
+		#menuToggle
+			display: block
+			padding: $primary-gutter
+			z-index: 6
+			-webkit-user-select: none
+			user-select: none
+
+			input
+				&:checked ~ span
+					opacity: 1
+					transform: rotate(45deg) translate(-2px, -1px)
+				&:checked ~ span:nth-last-child(3)
+					opacity: 0
+					transform: rotate(0deg) scale(0.2, 0.2)
+				&:checked ~ span:nth-last-child(2)
+					opacity: 1
+					transform: rotate(-45deg) translate(0, -1px)
+				&:checked ~ ul
+					transform: scale(1.0, 1.0)
+					opacity: 1
+			span
+				display: block
+				width: 33px
+				height: 3px
+				margin-bottom: 5px
+				position: relative
+				background: #EDEDED
+				border-radius: 2px
+				z-index: 6
+				transform-origin: 4px 0px
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+
+				&:first-child
+					transform-origin: 0% 0%
+				&:nth-last-child(2)
+					transform-origin: 0% 100%
+		#menu
+			position: absolute
+			height: 300vh
+			width: 300px
+			margin: -100px 0px 0px -50px
+			padding: 50px
+			padding-top: 125px
+			-webkit-font-smoothing: antialiased
+			transform-origin: 0% 0%
+			transform: translate(-100%, 0)
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 nav
 	ul
 		list-style-type: none
 		display: inline-block
 		margin: 0
 		padding: 0
-		display: flex
-		justify-content: center
-		align-items: baseline
-
-		li
-			padding: $primary-gutter
-		li:first-child
-			margin-right: auto
-			padding-left: 0
-		li:last-child
-			width: 184px
-			margin-left: auto
-			padding-right: 0
-			text-align: center
 	a
 		color: $secondary-color
 	a:hover
 		color: #FFF
 footer
 	nav
-		display: flex
-		justify-content: space-between
 		padding: $primary-gutter 0px
 	.col > *
 		display: inline-block
 		margin: 0px 0px $primary-gutter 0px
-	.col:last-child
-		padding: 0px $primary-gutter 0px 0px
 	i
 		margin-right: $primary-gutter
 		width: 16px
@@ -50,10 +115,47 @@ footer
 		width: 290px
 		margin: 0 !important
 
-		.map
-			max-width: 100%
-			-webkit-filter: grayscale(0.5)
-			filter: grayscale(0.5)
-		.map:hover
-			-webkit-filter: grayscale(0)
-			filter: grayscale(0)
+		.map-overlay
+			position: relative
+			object-fit: cover
+			
+			img
+				width: 100%
+				vertical-align: top
+			
+			&:after
+				content: '\A'
+				position: absolute
+				height: 100%
+				width: 100%
+				top: 0
+				left: 0
+				background: rgba(16, 43, 63, 0.5)
+				opacity: 0
+				transition: opacity 300ms ease-out
+			&:before
+				content: attr(data-content)
+				position: absolute
+				width: 100%
+				color: #FFF
+				z-index: 1
+				bottom: 0
+				padding: 4px 10px
+				text-align: center
+				box-sizing: border-box
+				-moz-box-sizing: border-box
+				opacity: 0
+				transition: opacity 300ms ease-out
+			&:hover:after, &:hover:before
+				opacity: 1
+				transition: opacity 300ms ease-out
+	@media screen and (max-width: $toast-breakpoint-medium)
+		// Responsive footer nav
+		.col
+			width: 100%
+		.col > *
+			display: block
+			margin: 0 $primary-gutter !important
+.isteh
+	padding-left: 0 !important
+	font-size: 24px

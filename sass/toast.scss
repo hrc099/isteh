@@ -42,7 +42,7 @@ $toast-col-groups: (2, 3, 4, 5, 6, 8, 12) !default;
 $toast-gutter-width: 20px !default;
 
 // Breakpoints
-$toast-breakpoint-medium: 700px !default;
+$toast-breakpoint-medium: 770px !default;
 $toast-breakpoint-small: 480px !default;
 
 // Pushes and pulls
@@ -52,6 +52,7 @@ $toast-pulls: true !default;
 .#{$toast-grid-namespace} {
   list-style: none;
   margin-left: -$toast-gutter-width;
+  margin-right: -$toast-gutter-width;
 }
 
 %span-all       { width: percentage(1/1); }
@@ -171,7 +172,6 @@ $toast-pulls: true !default;
 .#{$toast-grid-column-namespace} {
   box-sizing: border-box;
   display: inline-block;
-  margin-right: -.25em;
   min-height: 1px;
   padding-left: $toast-gutter-width;
   vertical-align: top;
@@ -185,8 +185,8 @@ $toast-pulls: true !default;
 
   @media (max-width: $toast-breakpoint-medium) and (min-width: $toast-breakpoint-small) {
     &[class*="#{$toast-grid-column-namespace}--m-"] {
-      display: inline-block;
-      margin-right: -.24em;
+      display: block;
+      //margin-right: -.24em;
     }
 
     &.#{$toast-grid-column-namespace}--m-1-of-2 {
@@ -216,8 +216,8 @@ $toast-pulls: true !default;
 
   @media (max-width: $toast-breakpoint-small) {
     &[class*="#{$toast-grid-column-namespace}--s-"] {
-      display: inline-block;
-      margin-right: -.24em;
+      display: block;
+      //margin-right: -.24em;
     }
 
     &.#{$toast-grid-column-namespace}--s-1-of-2 {

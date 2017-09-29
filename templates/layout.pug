@@ -1,5 +1,5 @@
 doctype html
-html
+html#html
   head
     link(rel="stylesheet", href="../stylesheets/normalize.css")
     link(rel="stylesheet", href="../stylesheets/master.css")
@@ -8,34 +8,38 @@ html
     header
       .wrap
         .grid--no-gutter
-          nav#nav
-            ul
-              li
-                a(href='index.html').isteh
-                  b Inox Staklo Teh
-              li
-                a(href='index.html')
-                  b POČETNA
-              li
-                a(href='ponuda.html') 
-                  b PONUDA
-              li
-                a(href='onama.html') 
-                  b O NAMA
-              li
-                a(href='kontakt.html') 
-                  b KONTAKT
-              li
-                a(href='https://www.facebook.com/InoxStakloTeh' target='_blank').isteh
-                  b
-                    i.fa.fa-facebook-official(aria-hidden='true')
-    script(src="../js/app.js")
+          nav(role='navigation')#nav
+            #menuToggle
+              input(type='checkbox')
+              span
+              span
+              span
+              ul#menu
+                li
+                  a(href='index.html').isteh
+                    b Inox Staklo Teh
+                li
+                  a(href='index.html')
+                    b POČETNA
+                li
+                  a(href='ponuda.html') 
+                    b PONUDA
+                li
+                  a(href='onama.html') 
+                    b O NAMA
+                li
+                  a(href='kontakt.html') 
+                    b KONTAKT
+                li.icons
+                  a(href='https://www.facebook.com/InoxStakloTeh')
+                    b
+                      i.fa.fa-facebook-official(aria-hidden='true')
     block content
-    footer
+    footer#footer
       .wrap
         .grid
           nav
-            .col
+            .col--1-of-3.col--m-2-of-2.col--s-2-of-2.col
               span
                 a(href='index.html').isteh
                       b Inox Staklo Teh
@@ -56,22 +60,23 @@ html
                   span +38513370948
               br
               span
-                a(href='https://www.facebook.com/InoxStakloTeh' target='_blank')
+                a(href='https://www.facebook.com/InoxStakloTeh')
                   i.fa.fa-facebook-official(aria-hidden='true')
                   span ISTeh Facebook stranica
               br
               span
-                a(href='https://goo.gl/maps/GGqhQUEkeRT2' target='_blank')
+                a(href='https://goo.gl/maps/Ygb7J4yA8VJ2' target='_blank')
                   i.fa.fa-map-marker(aria-hidden='true')
                   span Novački odv. II 8, Rakitje
-            .col
+            .col--1-of-3.col--m-2-of-2.col--s-2-of-2.col
               span.hidden
                 a(href='index.html').isteh
                       b Inox Staklo Teh
               br
-              a.map-link(href='https://goo.gl/maps/GGqhQUEkeRT2' target='_blank')
-                img.map(src='../img/isteh_map.png')
-            .col
+              a.map-link(href='https://goo.gl/maps/Ygb7J4yA8VJ2' target='_blank')
+                .map-overlay(data-content='kliknite za precizan prikaz lokacije')
+                  img(src='../img/isteh_map.png')
+            .col--1-of-3.col--m-2-of-2.col--s-2-of-2.col
               span.hidden
                 a(href='index.html').isteh
                       b Inox Staklo Teh
@@ -79,3 +84,4 @@ html
               span OIB: 34982622129
               br
               span IBAN: HR3223600001102448735
+    script(src="../js/app.js")

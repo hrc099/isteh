@@ -1,44 +1,81 @@
 extends layout
 
 block content
-    .wrap
+    .wrap#content
         .grid
             .main
-                .panel
-                    .col.col--5-of-8
+                .panel.index-panel
+                    .col.col--5-of-8.left-fix
                         p
                             | Inox Staklo Teh je tvrtka koja se bavi obradom i pripremom inoxa, prvenstveno
-                            | izradom nosača za stakla. Proizvodimo širok raspon proizvoda ovisno o potrebama kupca.
+                            | izradom nosača za stakla. Izrađujemo širok raspon proizvoda zadovoljavajući zahtjeve
+                            | različitih klijenata.
                             br
                             br
                             | Primarni proizvod su nam spider držači stakla raznih namjena
                             | (za staklena vrata, fasade, nadstrešnice, staklene
-                            | stijene i slično). U dugodišnjem radu izradili smo i ugradili
-                            | velik broj različitih proizvoda.
-                            br
-                            br
-                            | Iako je tvrtka trenutno usmjerena na proizvodnju, po dogovoru je moguća i montaža.
-                            | Ogled naših radova i okvirne informacije o istima te fotografije istih
+                            | stijene i ostalo), a tokom dugogodišnjeg rada isporučili smo i montirali
+                            | velik broj različitih spider držača kao i ostalih proizvoda.
+                            | Ogled naših radova i okvirne informacije te fotografije istih
                             | možete vidjeti na 
                             a(href='ponuda.html')
                                 b stranici ponude
                             |.
                             br
                             br
-                            | Kontaktirati nas možete na 
-                            a(href='tel:+38598414550')
-                                b +38598414550
-                            |  ili 
-                            a(href='mailto:emil.bosak@zg.t-com.hr')
-                                b emil.bosak@zg.t-com.hr
+                            | Više proizvoda i najnovije isporuke možete vidjeti na našoj 
+                            a(href='https://www.facebook.com/InoxStakloTeh')
+                                b Facebook stranici
+                            |. Na istoj nas možete i kontaktirati s Vašim upitima.
+                            br
+                            br
+                            .cta-section
+                                a(href='https://www.facebook.com/InoxStakloTeh')
+                                    i.fa.fa-facebook-official(aria-hidden='true')
+                                    span Pošaljite poruku
+                            br
+                            br.hidden-sm
+                            br.hidden-sm
+                            | Iako je tvrtka usmjerena na proizvodnju, po dogovoru je moguća i montaža.
+                            | Ako želite saznati detaljnije informacije o radovima i ponudi možete nas kontaktirati
+                            | na 
+                            b 098414550
                             |.
+                            br
+                            br
+                            .cta-section
+                                a(href='tel:+38598414550')
+                                    i.fa.fa-phone(aria-hidden='true')
+                                    span Nazovite nas
+                            br.hidden-sm
+                            br.hidden-sm
+                            small (link radi na mobilnim i uređajima sa SIM karticom)
+                            br
                     .col.col--3-of-8
-                        .img
-                            img(src='../img/img1.jpg')
-                    .col.col--3-of-8
-                        .img
-                            img(src='../img/img2.jpg')
-                    .col.col--5-of-8
-                        p
-                            | Radimo različite vrste nosača ovisno o potrebama klijenta. Proizvodimo
-                            | velik broj visokokvalitetnih proizvoda dugi niz godina.
+                        .img(data-content='Spider držač fi50').spider-fi-50
+                            svg(xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Spider držač fi50 l=20 sa središnjim vijkom M20x1.5' viewBox='0 0 100 100')
+                                title Spider držač fi50
+                                desc Spider držač fi50 l=20 sa središnjim vijkom M20x1.5
+                                circle(cx='50' cy='50' r='40' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                                circle(cx='50' cy='50' r='20' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                                circle(cx='40' cy='50' r='5' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                                circle(cx='60' cy='50' r='5' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                        .img(data-content='Spider držač fi50').spider-hex
+                            svg(xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Spider držač fi50 l=25' viewBox='0 0 100 100').spider-hex-circle
+                                title Spider držač fi50
+                                desc Spider držač fi50 l=25
+                                circle(cx='50' cy='50' r='40' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                                circle(cx='50' cy='50' r='20' stroke='#102B3F' stroke-width='0.3' fill='#FFF' fill-opacity='0.0')
+                            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 310 310').spider-hex-hex
+                                polygon(points='300,150 225,280 75,280 0,150 75,20 225,20' stroke='#102B3F' stroke-width='3' fill='#FFF' fill-opacity='0.0')
+                        .img(data-content='Inox AISI 316 pant za staklo').pant-staklo
+                            svg(xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Inox AISI 316 pant za staklena vrata nestandardne debljine od 16mm, izrađeno po narudžbi' viewBox='0 0 100 50')
+                                title Inox AISI 316 pant za staklo
+                                desc Inox AISI 316 pant za staklena vrata nestandardne debljine od 16mm, izrađeno po narudžbi
+                                rect(x='10' y='5' rx='0.5' ry='0.5' width='80' height='40' style='stroke:#102B3F;stroke-width:0.2;fill:#FFF;fill-opacity:0.0;')
+                                circle(cx='25' cy='25' r='5' style='stroke:#102B3F;stroke-width:0.2;fill:#FFF;fill-opacity:0.0;')
+                                circle(cx='75' cy='25' r='5' style='stroke:#102B3F;stroke-width:0.2;fill:#FFF;fill-opacity:0.0;')
+                        br
+                        br
+                        .cta-section.work-cta
+                                a(href='ponuda.html') Upoznajte naše proizvode

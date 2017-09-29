@@ -1,0 +1,46 @@
+@import style
+
+.ponuda .img
+    position: relative
+    margin-bottom: $primary-gutter
+    
+    img
+        width: 100%
+        vertical-align: top
+    &:after
+        content: '\A'
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        background: rgba(16, 43, 63, 0.5)
+        opacity: 0
+        transition: opacity 300ms ease-out
+    &:before
+        content: attr(data-content)
+        position: absolute
+        width: 100%
+        color: #FFF
+        z-index: 1
+        bottom: 0
+        padding: 4px 10px
+        text-align: center
+        box-sizing: border-box
+        -moz-box-sizing: border-box
+        opacity: 0
+        transition: opacity 300ms ease-out
+    &:hover:after, &:hover:before
+        opacity: 1
+        transition: opacity 300ms ease-out
+
+// Responsive images
+@media screen and (max-width: $toast-breakpoint-medium)
+    .ponuda img
+        object-fit: cover
+    .img-sm, .img-h
+        height: auto
+        max-height: 500px
+@media screen and (max-width: $toast-breakpoint-small)
+    .img-sm, .img-h
+        max-height: 300px

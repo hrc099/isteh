@@ -1,25 +1,30 @@
-/* Imports - font and other .sass files */
+// Imports - font and other .sass files
 
+@import toast
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext')
 
-/* Variables */
+// Variables
 
 $primary-color: #102B3F
 $secondary-color: #EDEDED
 $primary-text: #282828
 $primary-gutter: 20px
 $nav-height: 76px
+$nav-height-sm: 65px
+$radius: 1px
 
-/* Styles */
+// Styles
 
 *
 	box-sizing: border-box
 body
 	color: $primary-text
-	background: $secondary-color
+	background: #FFF
 	font-family: 'Open Sans', sans-serif
 	font-size: 16px
 	line-height: 1.5
+h1
+	line-height: 1
 a
 	text-decoration: none
 .wrap
@@ -28,17 +33,47 @@ a
 .main
 	margin-top: $nav-height + $primary-gutter * 2
 .panel
-	margin: 0px 20px 40px 20px
+	margin: 0px $primary-gutter $primary-gutter * 2 $primary-gutter
+	padding: $primary-gutter
 	background: #FFF
 
 	a, a *
 		color: $primary-color
-		padding: 0 !important
+		padding: 0
 	img
-		max-width: 100%
-.main .col *
-	padding: $primary-gutter
-.isteh
-	font-size: 24px
+		width: 100%
+	.img
+		opacity: 0
+	.img.load-in
+		animation: loadInAnim 400ms ease-in forwards
+	p
+		margin: 0
+.panel, img
+	border-radius: $radius
 .hidden
 	visibility: hidden
+.img-sm
+	height: 150px
+.img-h
+	height: 300px
+.left-fix
+	padding-left: 0
+.no-top-margin
+	margin-top: 0
+
+// Load-in animation
+
+@keyframes loadInAnim
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
+// Responsive layout
+@media screen and (max-width: $toast-breakpoint-medium)
+	.grid
+		margin: 0
+	.main
+		margin-top: $nav-height-sm
+	.panel > .col
+		padding-left: 0
