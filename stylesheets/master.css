@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
+@import url(../stylesheets/lightbox.min.css);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -2649,7 +2650,7 @@ a {
 
 .panel {
   margin: 0px 20px 40px 20px;
-  padding: 20px;
+  padding: 0;
   background: #FFF; }
   .panel a, .panel a * {
     color: #102B3F;
@@ -2666,11 +2667,28 @@ a {
 .panel, img {
   border-radius: 1px; }
 
+.cta-section a {
+  display: block;
+  float: left;
+  width: 250px;
+  padding: 10px 20px;
+  background: #102B3F;
+  color: #EDEDED;
+  border-radius: 1px;
+  text-align: center; }
+.cta-section a * {
+  color: #EDEDED; }
+.cta-section a:hover, .cta-section a:hover > * {
+  background: #0E2434;
+  color: #FFF; }
+.cta-section i {
+  margin-right: 10px; }
+
 .hidden {
   visibility: hidden; }
 
 .img-sm {
-  height: 150px; }
+  height: 140px; }
 
 .img-h {
   height: 300px; }
@@ -2680,6 +2698,9 @@ a {
 
 .no-top-margin {
   margin-top: 0; }
+
+.visible-sm {
+  display: none; }
 
 @keyframes loadInAnim {
   0% {
@@ -2691,10 +2712,16 @@ a {
     margin: 0; }
 
   .main {
-    margin-top: 65px; }
+    margin-top: 85px; }
 
   .panel > .col {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .hidden-sm {
+    display: none; }
+
+  .visible-sm {
+    display: block; } }
 /*-----------------------------------*\
   $TOAST-GRID
   An insane grid.
@@ -3017,7 +3044,7 @@ a {
 
 .panel {
   margin: 0px 20px 40px 20px;
-  padding: 20px;
+  padding: 0;
   background: #FFF; }
   .panel a, .panel a * {
     color: #102B3F;
@@ -3034,11 +3061,28 @@ a {
 .panel, img {
   border-radius: 1px; }
 
+.cta-section a {
+  display: block;
+  float: left;
+  width: 250px;
+  padding: 10px 20px;
+  background: #102B3F;
+  color: #EDEDED;
+  border-radius: 1px;
+  text-align: center; }
+.cta-section a * {
+  color: #EDEDED; }
+.cta-section a:hover, .cta-section a:hover > * {
+  background: #0E2434;
+  color: #FFF; }
+.cta-section i {
+  margin-right: 10px; }
+
 .hidden {
   visibility: hidden; }
 
 .img-sm {
-  height: 150px; }
+  height: 140px; }
 
 .img-h {
   height: 300px; }
@@ -3048,6 +3092,9 @@ a {
 
 .no-top-margin {
   margin-top: 0; }
+
+.visible-sm {
+  display: none; }
 
 @keyframes loadInAnim {
   0% {
@@ -3059,10 +3106,16 @@ a {
     margin: 0; }
 
   .main {
-    margin-top: 65px; }
+    margin-top: 85px; }
 
   .panel > .col {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .hidden-sm {
+    display: none; }
+
+  .visible-sm {
+    display: block; } }
 header, footer {
   background: #102B3F;
   color: #EDEDED;
@@ -3090,17 +3143,22 @@ header {
     background: #102B3F; }
     header ul li {
       display: inline-block;
-      padding: 0; }
+      padding: 0;
+      vertical-align: middle; }
       @media screen and (max-width: 770px) {
         header ul li {
           display: block; } }
+      header ul li:first-child a:hover, header ul li:last-child a:hover {
+        background: inherit; }
       header ul li a {
-        margin: 20px 0;
-        padding: 0 20px;
+        margin: 0;
+        padding: 20px;
         display: block; }
         @media screen and (max-width: 770px) {
           header ul li a {
             text-align: center; } }
+        header ul li a:hover {
+          background: #0E2434; }
   header .icons a {
     font-size: 24px; }
   @media screen and (max-width: 770px) {
@@ -3537,7 +3595,7 @@ a {
 
 .panel {
   margin: 0px 20px 40px 20px;
-  padding: 20px;
+  padding: 0;
   background: #FFF; }
   .panel a, .panel a * {
     color: #102B3F;
@@ -3554,11 +3612,28 @@ a {
 .panel, img {
   border-radius: 1px; }
 
+.cta-section a {
+  display: block;
+  float: left;
+  width: 250px;
+  padding: 10px 20px;
+  background: #102B3F;
+  color: #EDEDED;
+  border-radius: 1px;
+  text-align: center; }
+.cta-section a * {
+  color: #EDEDED; }
+.cta-section a:hover, .cta-section a:hover > * {
+  background: #0E2434;
+  color: #FFF; }
+.cta-section i {
+  margin-right: 10px; }
+
 .hidden {
   visibility: hidden; }
 
 .img-sm {
-  height: 150px; }
+  height: 140px; }
 
 .img-h {
   height: 300px; }
@@ -3568,6 +3643,9 @@ a {
 
 .no-top-margin {
   margin-top: 0; }
+
+.visible-sm {
+  display: none; }
 
 @keyframes loadInAnim {
   0% {
@@ -3579,10 +3657,16 @@ a {
     margin: 0; }
 
   .main {
-    margin-top: 65px; }
+    margin-top: 85px; }
 
   .panel > .col {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .hidden-sm {
+    display: none; }
+
+  .visible-sm {
+    display: block; } }
 .index-panel .img {
   position: relative;
   width: 50%;
@@ -3596,33 +3680,8 @@ a {
 .index-panel .spider-hex {
   position: relative;
   width: 50%; }
-  .index-panel .spider-hex .spider-hex-circle {
-    z-index: 1; }
-  .index-panel .spider-hex .spider-hex-hex {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25%;
-    height: 25%;
-    transform: translate(-46.5%, -75%);
-    z-index: 2; }
 .index-panel .pant-staklo {
   width: 100%; }
-.index-panel .cta-section a {
-  display: block;
-  float: left;
-  width: 250px;
-  padding: 10px 20px;
-  background: #102B3F;
-  color: #EDEDED;
-  border-radius: 1px;
-  text-align: center; }
-.index-panel .cta-section a * {
-  color: #EDEDED; }
-.index-panel .cta-section a:hover, .index-panel .cta-section a:hover > * {
-  color: #FFF; }
-.index-panel .cta-section i {
-  margin-right: 10px; }
 .index-panel .work-cta a {
   float: none;
   margin: 0 auto; }
@@ -3630,10 +3689,7 @@ a {
 @media screen and (max-width: 770px) {
   .cta-section a {
     float: none !important;
-    margin: 0 auto; }
-
-  .hidden-sm {
-    display: none; } }
+    margin: 0 auto; } }
 /*-----------------------------------*\
   $TOAST-GRID
   An insane grid.
@@ -3956,7 +4012,7 @@ a {
 
 .panel {
   margin: 0px 20px 40px 20px;
-  padding: 20px;
+  padding: 0;
   background: #FFF; }
   .panel a, .panel a * {
     color: #102B3F;
@@ -3973,11 +4029,28 @@ a {
 .panel, img {
   border-radius: 1px; }
 
+.cta-section a {
+  display: block;
+  float: left;
+  width: 250px;
+  padding: 10px 20px;
+  background: #102B3F;
+  color: #EDEDED;
+  border-radius: 1px;
+  text-align: center; }
+.cta-section a * {
+  color: #EDEDED; }
+.cta-section a:hover, .cta-section a:hover > * {
+  background: #0E2434;
+  color: #FFF; }
+.cta-section i {
+  margin-right: 10px; }
+
 .hidden {
   visibility: hidden; }
 
 .img-sm {
-  height: 150px; }
+  height: 140px; }
 
 .img-h {
   height: 300px; }
@@ -3987,6 +4060,9 @@ a {
 
 .no-top-margin {
   margin-top: 0; }
+
+.visible-sm {
+  display: none; }
 
 @keyframes loadInAnim {
   0% {
@@ -3998,16 +4074,31 @@ a {
     margin: 0; }
 
   .main {
-    margin-top: 65px; }
+    margin-top: 85px; }
 
   .panel > .col {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .hidden-sm {
+    display: none; }
+
+  .visible-sm {
+    display: block; } }
+.ponuda .cta-section {
+  display: inline-block;
+  margin-right: 20px; }
+.ponuda .anchor:before {
+  content: "";
+  display: block;
+  height: 76px;
+  margin: -76px 0 0; }
 .ponuda .img {
   position: relative;
   margin-bottom: 20px; }
   .ponuda .img img {
     width: 100%;
-    vertical-align: top; }
+    vertical-align: top;
+    object-fit: cover; }
   .ponuda .img:after {
     content: "\a";
     position: absolute;

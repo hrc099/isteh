@@ -2,33 +2,111 @@ extends layout
 
 block content
     .wrap#content
-        .grid
+        .grid#top
             .main
                 .panel.ponuda
                     .col--8-of-8
-                        h1.no-top-margin OGRADE
+                        span Sekcije stranice proizvoda (kliknite za brzi prebačaj na željenu sekciju):
+                        br
+                        br
+                        .cta-section
+                            a(href='#spider') Spider držači
+                        .cta-section
+                            a(href='#nadstresnice') Nadstrešnice i ograde
+                        .cta-section
+                            a(href='#ostalo') Ostalo i posebne narudžbe
+                        p
+                            | Želite li vidjeti više proizvoda i najnovije isporuke
+                            | ili imate upit, posjetite našu 
+                            a(href='https://www.facebook.com/InoxStakloTeh')
+                                b Facebook stranicu
+                        h3#spider.anchor Spider držači
+                        p
+                            | Isporučujemo spider držače različitih namjena i za različite tipove
+                            | staklenih ograda, nadstrešnica, fasada, vrata i stijena
+                        br
                     .col--4-of-8.col--m-2-of-2.col--s-2-of-2.col.left-fix
-                        .img(data-content='nadstrešnica s nosačima')
-                            img(src="../img/img3.jpg", alt="spider nosac").img-h
+                        a(href='../img/img8.jpg' data-lightbox='spider' data-title='Spider fi 50 l=25 držači za staklo')
+                            .img(data-content='Spider fi 50 držači za staklo')
+                                img(src="../img/img8.jpg", alt="Spider fi 50 l=25 držači za staklo").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col
+                        a(href='../img/img11.jpg' data-lightbox='spider' data-title='Držač za staklene ograde s mogućnošću podešavanja')
+                            .img(data-content='Spider držač za staklene ograde')
+                                img(src="../img/img11.jpg", alt="Spider držač za staklene ograde").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col
+                        a(href='../img/img1.jpg' data-lightbox='spider' data-title='Križasti spider držač za staklene fasade')
+                            .img(data-content='Spider držač za staklene fasade')
+                                img(src="../img/img1.jpg", alt="Spider držač za staklene fasade").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col.left-fix
+                        a(href='../img/img12.jpg' data-lightbox='spider' data-title='Upušteni držač fi 30 za staklene stijene, pregrade i sl.')
+                            .img(data-content='Spider držač za staklene stijene i pregrade')
+                                img(src="../img/img12.jpg", alt="Spider držač za staklene stijene i pregrade").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col
+                        a(href='../img/img9.jpg' data-lightbox='spider' data-title='Držači stakla za spajanje staklenih stijena')
+                            .img(data-content='Spider držači za spajanje staklenih stijena')
+                                img(src="../img/img9.jpg", alt="Spider držači za spajanje staklenih stijena").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col
+                        a(href='../img/img13.jpg' data-lightbox='spider' data-title='Držači za staklenu fasadu')
+                            .img(data-content='Spider držači za staklenu fasadu')
+                                img(src="../img/img13.jpg", alt="Spider držači za staklenu fasadu").img-h
+                    .col--2-of-8.col--m-2-of-2.col--s-2-of-2.col
+                        a(href='../img/img5.jpg' data-lightbox='spider' data-title='Isporuka spider držača za stakla 12 - 20mm')
+                            .img(data-content='Spider držači stakla 12 - 20mm')
+                                img(src="../img/img5.jpg", alt="Spider držači stakla 12-20mm").img-sm
+                        a(href='../img/img7.jpg' data-lightbox='spider' data-title='Spider fi 50 l=20 držač sa središnjim vijkom M20×1.5')
+                            .img(data-content='Spider fi 50 držač')
+                                img(src="../img/img7.jpg", alt="Spider fi 50 držač").img-sm
+                    .col--8-of-8
+                        h3#nadstresnice.anchor Nadstrešnice i ograde
+                        p
+                            | Proizveli smo i montirali velik broj staklenih nadstrešnica i ograda, ponajviše u kombinaciji s inoxom
+                        br
+                    .col--4-of-8.col--m-2-of-2.col--s-2-of-2.col.left-fix
+                        a(href='../img/img3.jpg' data-lightbox='nadstresnice' data-title='Nadstrešnica sa spider nosačima')
+                            .img(data-content='Nadstrešnica sa spider držačima')
+                                img(src="../img/img3.jpg", alt="Nadstrešnica sa spider nosačima").img-h
                     .col--2-of-8.col--m-4-of-8.col--s-4-of-8.col
-                        .img(data-content='nadstrešnica')
-                            img(src="../img/img4.jpg", alt="nadstresnica custom nosac").img-h
+                        a(href='../img/img4.jpg' data-lightbox='nadstresnice' data-title='Nadstrešnica s kaljenim staklom i olukom za odvodnju vode')
+                            .img(data-content='Nadstrešnica s kaljenim staklom i odvodom')
+                                img(src="../img/img4.jpg", alt="Nadstrešnica s kaljenim staklom i odvodom").img-h
                     .col--2-of-8.col--s-4-of-8.col
-                        .img(data-content='spider nosač')
-                            img(src="../img/img1.jpg", alt="spider nosac").img-h
+                        a(href='../img/img10.jpg' data-lightbox='nadstresnice' data-title='Nadstrešnica na inox konstrukciji od cijevi fi 90. Staklo na spider držačima')
+                            .img(data-content='Nadstrešnica na inox konstrukciji')
+                                img(src="../img/img10.jpg", alt="Nadstrešnica na inox konstrukciji").img-h
                     .col--2-of-8.col--s-4-of-8.col.left-fix
-                        .img(data-content='montaža stakla i nosača')
-                            img(src="../img/img2.jpg", alt="spider nosac proizvodnja").img-h
-                        .img(data-content='spider nosač')
-                            img(src="../img/img7.jpg", alt="ograda custom nosac").img-sm
+                        a(href='../img/img14.jpg' data-lightbox='nadstresnice' data-title='Nadstrešnica balkona u produžetku krova. Noseće čelične konzole, staklo kaljeno - laminirano 5.5.1.')
+                            .img(data-content='Staklena nadstrešnica balkona')
+                                img(src="../img/img14.jpg", alt="Nadstrešnica balkona u produžetku krova").img-h
                     .col--2-of-8.col--s-4-of-8.col
-                        .img(data-content='nadstrešnica s nosačima')
-                            img(src="../img/img3.jpg", alt="spider nosac").img-sm
-                        .img(data-content='spider nosač')
-                            img(src="../img/img9.jpg", alt="kutni nosac").img-h
+                        a(href='../img/img15.jpg' data-lightbox='nadstresnice' data-title='Ograda od kaljeno - laminiranog stakla 6+6 mm s inox stupićima')
+                            .img(data-content='Staklena ograda s inox stupićima')
+                                img(src="../img/img15.jpg", alt="Staklena ograda s inox stupićima").img-h
+                    .col--2-of-8.col--s-4-of-8.col
+                        a(href='../img/img16.jpg' data-lightbox='nadstresnice' data-title='Staklena ograda u U profilu s LED rasvjetom')
+                            .img(data-content='Staklena ograda, U profil')
+                                img(src="../img/img16.jpg", alt="Staklena ograda U profil").img-h
+                    .col--2-of-8.col--s-4-of-8.col
+                        a(href='../img/img6.jpg' data-lightbox='nadstresnice' data-title='Ograda sa zaštitnom stijenom od kaljenog stakla')
+                            .img(data-content='Ograda sa zaštitnom stijenom od kaljenog stakla')
+                                img(src="../img/img6.jpg", alt="Ograda sa zaštitnom stijenom od kaljenog stakla").img-h
                     .col--8-of-8
-                        h1 NADSTREŠNICE
+                        h3#ostalo.anchor Ostali proizvodi i posebne narudžbe
+                        p
+                            | Inox Staklo Teh proizvodi i montira staklena vrata, stijene i raznolike
+                            | proizvode po narudžbi
+                        br
+                    .col--4-of-8.col--m-2-of-2.col--s-2-of-2.col.left-fix
+                        a(href='../img/img2.jpg' data-lightbox='ostalo' data-title='Staklena ograda francuskog balkona i galerije. Staklo kaljeno-laminirano 12mm')
+                            .img(data-content='Staklena ograda francuskog balkona i galerije')
+                                img(src="../img/img2.jpg", alt="Staklena ograda francuskog balkona i galerije").img-h
+                    .col--2-of-8.col--m-4-of-8.col--s-4-of-8.col
+                        a(href='../img/img17.jpg' data-lightbox='ostalo' data-title='Pant za staklena vrata. Rađen po narudžbi zbog nestandardne debljine stakla od 16mm')
+                            .img(data-content='Pant za staklena vrata 16mm')
+                                img(src="../img/img17.jpg", alt="Pant za staklena vrata 16mm").img-h
                     .col--8-of-8
-                        h1 STAKLENE STIJENE / KLIZNA VRATA
-                    .col--8-of-8
-                        h1 IZRADA PO NARUDŽBI
+                        p
+                            | Za upite i informacije o proizvodima nazovite nas na 
+                            b 098414550
+                        a(href='#top')
+                            small povratak na vrh stranice &uarr;
+    script(src='../js/lightbox-plus-jquery.min.js')

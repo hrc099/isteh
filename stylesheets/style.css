@@ -322,7 +322,7 @@ a {
 
 .panel {
   margin: 0px 20px 40px 20px;
-  padding: 20px;
+  padding: 0;
   background: #FFF; }
   .panel a, .panel a * {
     color: #102B3F;
@@ -339,11 +339,28 @@ a {
 .panel, img {
   border-radius: 1px; }
 
+.cta-section a {
+  display: block;
+  float: left;
+  width: 250px;
+  padding: 10px 20px;
+  background: #102B3F;
+  color: #EDEDED;
+  border-radius: 1px;
+  text-align: center; }
+.cta-section a * {
+  color: #EDEDED; }
+.cta-section a:hover, .cta-section a:hover > * {
+  background: #0E2434;
+  color: #FFF; }
+.cta-section i {
+  margin-right: 10px; }
+
 .hidden {
   visibility: hidden; }
 
 .img-sm {
-  height: 150px; }
+  height: 140px; }
 
 .img-h {
   height: 300px; }
@@ -353,6 +370,9 @@ a {
 
 .no-top-margin {
   margin-top: 0; }
+
+.visible-sm {
+  display: none; }
 
 @keyframes loadInAnim {
   0% {
@@ -364,9 +384,15 @@ a {
     margin: 0; }
 
   .main {
-    margin-top: 65px; }
+    margin-top: 85px; }
 
   .panel > .col {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .hidden-sm {
+    display: none; }
+
+  .visible-sm {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

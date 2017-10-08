@@ -29,15 +29,23 @@ header
 		li
 			display: inline-block
 			padding: 0
+			vertical-align: middle
 			@media screen and (max-width: $toast-breakpoint-medium)
 				display: block
 
+			&:first-child, &:last-child
+				a:hover
+					background: inherit
+
 			a
-				margin: $primary-gutter 0
-				padding: 0 $primary-gutter
+				margin: 0
+				padding: $primary-gutter
 				display: block
 				@media screen and (max-width: $toast-breakpoint-medium)
 					text-align: center
+				
+				&:hover
+					background: $primary-hover
 	.icons
 		a
 			font-size: 24px
