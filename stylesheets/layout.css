@@ -368,6 +368,9 @@ a {
 .left-fix {
   padding-left: 0; }
 
+.no-margin {
+  margin: 0; }
+
 .no-top-margin {
   margin-top: 0; }
 
