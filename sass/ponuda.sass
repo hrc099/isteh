@@ -5,6 +5,7 @@
     .cta-section
         display: inline-block
         margin-right: $primary-gutter
+        margin-bottom: $primary-gutter
     .anchor
         &:before
             content: ''
@@ -45,14 +46,15 @@
         &:hover:after, &:hover:before
             opacity: 1
             transition: opacity 300ms ease-out
-
 // Responsive images
 @media screen and (max-width: $toast-breakpoint-medium)
     .ponuda img
-        object-fit: cover
+        object-fit: initial
     .img-sm, .img-h
         height: auto
         max-height: 500px
+    .card-cta
+        display: none
 @media screen and (max-width: $toast-breakpoint-small)
     .img-sm, .img-h
         max-height: 300px

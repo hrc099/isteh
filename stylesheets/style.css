@@ -356,6 +356,16 @@ a {
 .cta-section i {
   margin-right: 10px; }
 
+.card-cta {
+  height: 300px;
+  width: 100%;
+  background-color: #102B3F;
+  color: #EDEDED !important;
+  padding: 40px !important; }
+  .card-cta:hover {
+    background-color: #0E2434;
+    color: #FFF; }
+
 .hidden {
   visibility: hidden; }
 
