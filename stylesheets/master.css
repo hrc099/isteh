@@ -2690,6 +2690,8 @@ a {
   background-color: #102B3F;
   color: #EDEDED !important;
   padding: 40px !important; }
+  .card-cta span {
+    color: #EDEDED !important; }
   .card-cta:hover {
     background-color: #0E2434;
     color: #FFF; }
@@ -3097,6 +3099,8 @@ a {
   background-color: #102B3F;
   color: #EDEDED !important;
   padding: 40px !important; }
+  .card-cta span {
+    color: #EDEDED !important; }
   .card-cta:hover {
     background-color: #0E2434;
     color: #FFF; }
@@ -3661,6 +3665,8 @@ a {
   background-color: #102B3F;
   color: #EDEDED !important;
   padding: 40px !important; }
+  .card-cta span {
+    color: #EDEDED !important; }
   .card-cta:hover {
     background-color: #0E2434;
     color: #FFF; }
@@ -4091,6 +4097,8 @@ a {
   background-color: #102B3F;
   color: #EDEDED !important;
   padding: 40px !important; }
+  .card-cta span {
+    color: #EDEDED !important; }
   .card-cta:hover {
     background-color: #0E2434;
     color: #FFF; }
